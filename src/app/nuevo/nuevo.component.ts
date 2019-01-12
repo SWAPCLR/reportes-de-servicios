@@ -13,7 +13,6 @@ export class NuevoComponent implements OnInit {
     var bc = document.getElementById("bc");
     var i: number;
     
-    
     for (i = 0; i < acc.length; i++) {
       acc[i].addEventListener("click", function() {
         this.classList.toggle("active");
