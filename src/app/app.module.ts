@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { MenuComponent } from './menu/menu.component';
 import { HomeComponent } from './home/home.component';
 import { NuevoComponent } from './nuevo/nuevo.component';
-
+import {HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -18,7 +18,8 @@ import { NuevoComponent } from './nuevo/nuevo.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
