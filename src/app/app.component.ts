@@ -16,7 +16,7 @@ export class AppComponent implements OnInit{
   }
   ngOnInit(): void{
 
-    this.http.get('https://github.com/SWAPCLR/reportes-de-servicios.git').subscribe
+    this.http.get('https://api.github.com/users/seeschweiler').subscribe
     (data =>{
       console.log(data);
     });
