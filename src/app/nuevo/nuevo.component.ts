@@ -7,7 +7,7 @@ import {HttpClient} from '@angular/common/http';
   styleUrls: ['./nuevo.component.scss']
 })
 export class NuevoComponent implements OnInit {
-  constructor() { }
+  constructor(private http: HttpClient) { }
 
   ngOnInit() {
     var acc = document.getElementsByClassName("acordeon");
