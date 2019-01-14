@@ -1,4 +1,5 @@
 import { Component, OnInit, OnChanges, DoCheck, AfterContentInit, AfterContentChecked, AfterViewInit, AfterViewChecked, OnDestroy } from '@angular/core';
+import {HttpClient} from '@angular/common/http';
 
 @Component({
   selector: 'app-nuevo',
@@ -6,7 +7,7 @@ import { Component, OnInit, OnChanges, DoCheck, AfterContentInit, AfterContentCh
   styleUrls: ['./nuevo.component.scss']
 })
 export class NuevoComponent implements OnInit {
-  constructor() { }
+  constructor(private http: HttpClient) { }
 
   ngOnInit() {
     var acc = document.getElementsByClassName("acordeon");
